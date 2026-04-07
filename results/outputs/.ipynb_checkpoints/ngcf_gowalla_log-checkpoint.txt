@@ -1,0 +1,2 @@
+ Epoch       Loss        BPR        Reg  Recall@20    NDCG@20
+     3    0.17919    0.17919   0.000000     0.0350     0.0234

@@ -1,0 +1,132 @@
+NGCF PROJECT — REQUIREMENTS AND PIP COMMANDS
+=============================================
+
+This file was prepared by inspecting the uploaded zip file: src.zip
+
+Detected external Python libraries used in the code/notebooks:
+- numpy
+- scipy
+- torch
+- matplotlib
+- seaborn
+- pandas
+- scikit-learn
+- jupyterlab (recommended, because the project includes .ipynb notebooks)
+- notebook (optional alternative to JupyterLab)
+
+Standard-library modules also used (no pip install needed):
+- os
+- sys
+- time
+- random
+- argparse
+- warnings
+- zipfile
+- urllib.request
+- subprocess
+
+Local project modules detected (these are part of your project, not pip packages):
+- config / config_rec.py
+- utils.data_loader
+- utils.adjacency
+- utils.metrics
+- utils.early_stopping
+- models.ngcf
+
+--------------------------------------------------
+1) ONE-COMMAND INSTALL
+--------------------------------------------------
+
+pip install numpy scipy torch matplotlib seaborn pandas scikit-learn jupyterlab notebook
+
+--------------------------------------------------
+2) INDIVIDUAL PIP COMMANDS
+--------------------------------------------------
+
+pip install numpy
+pip install scipy
+pip install torch
+pip install matplotlib
+pip install seaborn
+pip install pandas
+pip install scikit-learn
+pip install jupyterlab
+pip install notebook
+
+--------------------------------------------------
+3) RECOMMENDED REQUIREMENTS.TXT CONTENT
+--------------------------------------------------
+
+numpy
+scipy
+torch
+matplotlib
+seaborn
+pandas
+scikit-learn
+jupyterlab
+notebook
+
+--------------------------------------------------
+4) OPTIONAL: VERSION-PINNED REQUIREMENTS EXAMPLE
+--------------------------------------------------
+
+numpy>=1.24
+scipy>=1.10
+torch>=2.0
+matplotlib>=3.7
+seaborn>=0.12
+pandas>=2.0
+scikit-learn>=1.3
+jupyterlab>=4.0
+notebook>=7.0
+
+--------------------------------------------------
+5) MAC SETUP COMMANDS
+--------------------------------------------------
+
+Create and activate a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate
+
+Then install everything:
+
+pip install --upgrade pip
+pip install numpy scipy torch matplotlib seaborn pandas scikit-learn jupyterlab notebook
+
+--------------------------------------------------
+6) NOTES
+--------------------------------------------------
+
+1. PyTorch installation can vary depending on your machine and acceleration backend.
+   For Apple Silicon / Mac, the plain pip install torch command is usually the first thing to try.
+
+2. The zip file does NOT show any external dependency like:
+   - faiss
+   - surprise
+   - tensorflow
+   - plotly
+   - streamlit
+   so they were not included.
+
+3. Some imports in the notebooks refer to project-internal modules such as:
+   - utils.data_loader
+   - models.ngcf
+   These must exist inside your project folder structure.
+
+4. If you want, you can rename this text file to requirements.txt after cleaning it down
+   to only the package lines.
+
+--------------------------------------------------
+7) MINIMAL INSTALL FOR JUST THE VISUALIZATION NOTEBOOK
+--------------------------------------------------
+
+pip install numpy matplotlib seaborn pandas scikit-learn torch scipy
+
+--------------------------------------------------
+8) MINIMAL INSTALL FOR JUST THE TRAINING CODE
+--------------------------------------------------
+
+pip install numpy scipy torch
+
