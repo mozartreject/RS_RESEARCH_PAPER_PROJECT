@@ -430,6 +430,7 @@ NGCF-1 (the full NGCF propagation rule) consistently outperforms simplified vari
 ---
 
 ## 📚 Reference
+research paper link: https://arxiv.org/abs/1905.08108
 
 ```bibtex
 @inproceedings{wang2019neural,
